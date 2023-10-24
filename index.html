@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Welcome to Ambitious Leaf</h1>
+        <div id="contain-btn">
+            <button class="btn" id="add">
+                <div id="add-btn">
+                    <img src="img/plus.png" alt="Button Image">
+                    <span>Add New Goals</span>
+                </div>
+            </button>
+            <button class="btn" id="set">
+                <img src="img/settings.png" alt="Button Image">
+            </button>
+            <button class="btn" id="sort">
+                <img src="img/sort.png" alt="Button Image">
+            </button>
+        </div>
+        <div class="task-content" id="taskContent">
+            <form class="grid-form">
+                <div class="left-column">
+                    <div class="form-group">
+                        <label for="goal">Goal</label>
+                        <input
+                            type="text"
+                            id="goal"
+                            name="goal"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="timeline">Date</label>
+                        <input
+                            type="date"
+                            id="timeline"
+                            name="date"
+                            required
+                        >
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select id="priority" name="priority" required>
+                            <option value="">Select Priority</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tag">Tag name</label>
+                        <select id="tag" name="tag">
+                            <option value="">Select Tag</option>
+                            <option value="sport">Sport</option>
+                            <option value="education">Education</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="housework">Housework</option>
+                            <option value="travel">Travel</option>
+                            <option value="fitness">Fitness</option>
+                            <option value="health">Health</option>
+                            <option value="work">Work</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" id="saveButton">Save</button>
+                    <button type="button" id="returnButton">Return</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="infoContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+#title{
+    color: green;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+h2 {
+    color: #508071;   
+}
+
+body {
+    background: linear-gradient(-45deg, #F0F2E7, #AEC3AE, #E7F6A8, #FFEEF4);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+/* Button bar*/
+#contain-btn {
+    display: flex;
+    flex-wrap: wrap; /* Allow the buttons to wrap to a new line when necessary */
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;  
+}
+.btn img {
+    width: 50px; /* Set the width of the image */
+    height: 50px; /* Set the height of the image */
+}
+
+#add{
+    flex: 0 0 auto; /* Prevent the left button from shrinking or growing */;
+}
+
+#add-btn{
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px #ccc solid;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+#add-btn > span{
+    font-size: 20px;
+    margin-left: 10px ;
+    font-weight: bold;
+}
+
+#set{
+    margin-left: auto;
+    display: flex;
+    flex: none; /* Allow the right buttons to grow to fill available space */
+}
+
+#sort{
+    margin-left: 3vw;
+}
+
+/* Task*/
+.task-content {
+    display: none;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: #75CDD8;
+    padding: 20px;
+    border:2px #000 solid;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: left;
+    max-width: 800px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 10px;
+}
+
+.form-group label {
+    grid-column: 1 / 2;
+    font-size: 18px; /* Increase label font size */
+}
+
+.form-group input {
+    grid-column: 2 / 3;
+    padding: 10px; /* Increase padding for larger rows */
+    font-size: 16px; /* Increase input font size */
+}
+
+.left-column {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 10px;
+}
+.right-column {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 10px;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 18px; /* Increase button font size */
+    color: white;
+    padding: 15px 30px; /* Increase button size for larger columns */
+    margin-top: 10px;
+    background-color: #0074d9;
+    border: none;
+    cursor: pointer;
+}
+
+/* CSS for styling the information grid container */
+.ElementsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 500px;
+    height:180px;
+    margin: 30px auto;
+    background-color: #c1eaf0;
+    font-size: 24px;
+}
+
+.Priority {
+    background-color: #FFEC00;
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Date {
+    background-color: #75CDD8;
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tag {
+    background-color: #75CDD8;
+    grid-column: 4 / 6;
+    grid-row: 5 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Goal {
+    grid-column: 2 / 5;
+    grid-row: 1 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
