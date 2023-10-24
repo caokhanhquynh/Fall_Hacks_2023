@@ -10,4 +10,3 @@
 4. Realize that half of the buttons aren't working, and there's this weird gradient going in the background (completely optional)
 
 Just a side note: The empty space on the right is left there on purpose for when we are able to get ads to run :D
-# Fall_Hacks_2023
